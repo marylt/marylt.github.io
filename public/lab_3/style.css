@@ -54,7 +54,7 @@ p, li {
 
 /* || header layout */
 
-header {
+.header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -65,7 +65,7 @@ body > * {
   padding: 1%;
 }
 
-main, header, nav, article, aside, footer, section {
+.main, .header, nav, .article, .aside, footer, section {
   background-color: #e6eeff;
   padding: 1%;
 }
@@ -75,9 +75,10 @@ h1 {
   text-transform: uppercase;
 }
 
-header img {
+.header img {
   display: block;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   padding-top: 20.15px;
 }
 
@@ -113,31 +114,31 @@ nav a, nav span {
 
 /* || main layout */
 
-main {
+.main {
   display: flex;
 }
 
-article, section {
+.article, .section {
   flex: 4;
 }
 
-aside {
+.aside {
   flex: 1;
   margin-left: 10px;
   padding: 1%;
 }
 
-aside a {
+.aside a {
   display: block;
   float: left;
   width: 50%;
 }
 
-aside img {
+.aside img {
   max-width: 100%;
 }
 
-footer {
+.footer {
   margin-top: 10px;
   background-color: #e6eeff;
 }
