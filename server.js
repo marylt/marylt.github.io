@@ -10,9 +10,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-app.get('/api', (req, res) => { console.log('GET request detected'); });
-
-app.post('/api', (req, res) => { res.send('Hello World'); });
+app.route('/api')
+  .get((req, res) => {
+    console.log('GET request detected');
+  })
+  .post((req, res) => {
+    console.log('POST request detected')
+    res.send('Hello World');
+  });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
