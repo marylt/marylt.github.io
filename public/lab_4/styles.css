@@ -45,9 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex: 1px 0 px 225px;
-    margin-left: 75px;
-    max-width: 400px;
+    flex: 1px 0px 225px;
     list-style: none;
 }
 
