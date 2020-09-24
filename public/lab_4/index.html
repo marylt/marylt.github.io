@@ -1,72 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-
 	<head>
-
 		<meta charset="utf-8"/>
-
 		<title>Mary Ton's Lab 4</title>
-
 		<link rel="stylesheet" href="styles.css">
-
 	</head>
 
-	<body>
-
-		<ul>
-				
+<body>
+	<div class="header">
+	<h1>Mary Ton's Lab 4</h1>
+	</div>
+		
+	<form action="/api" method="post">
+		<ul class="flex-outer">				
 			<li>
-				
-				<div class="flex-outer">
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="firstname" maxlength="140" placeholder="Enter first name here"/>
+			</li>
 
-				<form action="/api" method="post">
+			<li>
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lastname" maxlength="140" placeholder="Enter last name here"/>
+			</li>
 
-				<h1>Mary Ton's Lab 4</h1>
+			<li>
+				<label for="mail">E-mail:</label>
+				<input type="email" id="mail" name="mail" maxlength="140" placeholder="Enter e-mail here"/>
+			</li>
 
-					<label for="fname">First Name:</label>
-					<input type="text" id="fname" name="firstname" maxlength="140" placeholder="Enter first name here"/>
-					<br>
+			<li>
+				<label for="phone">Phone #:</label>
+				<input type="tel" id="phone" name="phone" maxlength="11" placeholder="Enter phone # here"/>
+			</li>		
 
-					<label for="lname">Last Name:</label>
-					<input type="text" id="lname" name="lastname" maxlength="140" placeholder="Enter last name here"/>
-					<br>
-
-					<label for="mail">E-mail:</label>
-					<input type="email" id="mail" name="mail" maxlength="140" placeholder="Enter e-mail here"/>
-					<br>
-
-					<label for="phone">Phone #:</label>
-					<input type="tel" id="phone" name="phone" maxlength="11" placeholder="Enter phone # here"/>
-					<br>
-
+			<li>
 					<label for="msg">Message:</label>
 					<textarea id="msg" name="message" rows="5" cols="33" placeholder="Enter message here"></textarea>
-					<br>
+			</li>
 
-					<div class="flex-inner">
+			<li>
+				<p>Age:</p>
+				<ul class="flex-inner">
 
-						<p>Age:</p><br><br>
+					<li>
+					<input type="checkbox" id="agerange1" name="agerange" value="18-35 years old">
+					<label for="agerange1">18-35</label>
+					</li>
 
-						<input type="checkbox" id="agerange1" name="agerange" value="18-35 years old">
-						<label for="agerange1">18-35</label>
-						<input type="checkbox" id="agerange2" name="agerange" value="35-50 years old">
-						<label for="agerange2">35-50</label>
-						<input type="checkbox" id="agerange3" name="agerange" value="50-65 years old">
-						<label for="agerange3">50-65</label>
+					<li>
+					<input type="checkbox" id="agerange2" name="agerange" value="35-50 years old">
+					<label for="agerange2">35-50</label>
+					</li>
 
-					</div>
-					<br>
+					<li>
+					<input type="checkbox" id="agerange3" name="agerange" value="50-65 years old">
+					<label for="agerange3">50-65</label>
+					</li>
+				</ul>
+			</li>
 
-					<button type="submit" name="submitbutton">Send your message!</button>
-
-				</form>
-
-				</div>
-
+			<li>
+				<button id="submit" type="submit" name="submitbutton" value="submit">Send your message!</button>
 			</li>
 				
 		</ul>
+
+	</form>
 
 	</body>
 

@@ -1,79 +1,104 @@
-.flex-outer button {
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    border-radius: 3px;
-    margin: 10px;
-}
+/* General setup */
 
-.flex-outer > li > button {
-    margin-left: 0px;
-    padding: 6px 12px;
+html {
+    font-size: 10px;  
 }
-
-.flex-outer > li > label + * {
-    flex: 1px 0px 225px;
+    
+body {
+width: 70%;
+min-width: 800px;
+margin: 0 auto;
+background-color: #F5F5DC;
 }
-
-.flex-outer > li > label {
-    flex: 1px 0px 125px;
-    max-width: 225px;
-    padding: 8px;
+    
+/* Typography */
+    
+h1 {
+color: black;
 }
-
+    
+p, input, li {
+color: black;
+}
+    
+h1 {
+font-size: 4rem;
+text-align: center;
+font-weight: 100;
+}
+    
+    
+p, li {
+font-size: 1.6rem;
+line-height: 1.5;
+}
+    
+/* Header Layout */
+    
+.header {
+margin-bottom: 10px;
+display: flex;
+flex-flow: row wrap;
+}
+    
+body > * {
+background-color:#F5F5DC;
+padding: 1%;
+}
+    
+.header {
+background-color:#F5F5DC;
+padding: 1%;
+}
+    
+h1 {
+flex: 5;
+text-transform: uppercase;
+}
+    
+.flex-outer li,
+.flex-inner {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+    
+/* Labels and Form Elements */
+.flex-outer > li > label,
 .flex-outer li p {
-    flex: 1px 0px 125px;
-    max-width: 225px;
-    padding: 8px;
+flex: 1 0 125px;
+max-width: 225px;
+padding: 8px;
 }
 
-.flex-outer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0px;
-    max-width: 800px;
-    padding: 0px 16px;
+.flex-outer > li > label + *,
+.flex-inner {
+flex: 1 0 225px;
 }
-
+    
+/* Submit Button */
+.flex-outer li button {
+margin-left: 0px;
+padding: 6px 12px;
+border: none;
+background: #F0F8FF;
+color: black;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+border-radius: 3px;
+}
+    
+/* Check Boxes */
 .flex-inner li {
-    justify-content: space-between;
-    width: 80px;
-    list-style: none;
+width: 80px;
 }
 
 .flex-inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 1px 0px 225px;
-    list-style: none;
+justify-content: space-between;
 }
-
-body {
-    background-color: #F0F8FF;
-}
-
-form {
-    margin: 0 auto;
-    width: 800px;
-    padding: 1em;
-}
-
-ul {
-    list-style: none;
-}
-
-label {
-    display: inline-block;
-    width: 60px;
-    padding: 10px;
-    text-align: left;
-}
-
-textarea {
-    display: flex;
-    align-items: center;
-    vertical-align: top;
-    text-align: left;
-    height: 5em;
+    
+.flex-outer {
+list-style-type: none;
+padding: 0px 16px;
+max-width: 800px; 
 }
