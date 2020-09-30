@@ -1,0 +1,129 @@
+/* with no edge spacing
+Your header should have fifteen pixels of space between it and your content div.
+When your page is compressed, your elements should center themselves horizontally. */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #997F6D;
+    color: #F0EAC2;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    background-color: #CCE6BA;
+    display: flex;
+    justify-content: center;
+}
+
+/* Set your content div to take up no more than 960px of page width. */
+/* Using flexbox, display your main content divs next to one another. */
+.container {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+
+/* Allow your image to take up no more space than the maximum width of your left column.
+Do not change the size of your UMD logo/Testudo picture while doing this. */
+.image {
+    flex: 1;
+    margin: 10px;
+}
+
+.image img{
+    max-width: 100%;
+}
+
+.image p {
+    padding: 10px;
+    background-color: #F0EAC2;
+}
+
+.description {
+    flex: 2;
+    background-color: #F0EAC2;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* //////////////// Mary Ton //////////////// */
+
+
+/* Using shorthand, add a solid, one-pixel border to your image. */
+/* Set your image to have rounded corners of 4px. */
+.image img {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* Ensure your list element headers and page header have a different font than your body fonts.
+Import no more than three weights of a display font from Google Fonts for this. */
+.header h1 {
+    padding: 20px 0px 0px 20px;
+}
+
+h1 {
+    font-family: 'Sniglet', cursive;
+    font-weight: 800;
+    text-shadow: 2px 2px white;
+}
+
+h2 {
+    font-family: 'Sniglet', cursive;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Sniglet', cursive;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+/* Set your body background to a pale color 
+and highlight the background of your text and image. */
+.image p {
+    background-color: #F0EAC2;
+    padding: 10px;
+}
+
+.description {
+    background-color: #F0EAC2;
+    padding: 10px;
+    border: 1px dashed white;
+}
+/* Add a maximum screen size break at 1000 pixels. */
+
+/* If your display size is less than 1000 pixels...
+set your container to center content in the page
+Set your image-and-caption box to form a row
+Evenly space your image and caption within that row
+Set a bottom margin on your image and caption to ensure good spacing. */
+
+@media only screen and (max-width: 1000px) {
+/* Make sure that as your page changes size, 
+    your elements wrap below one another properly. */
+}
