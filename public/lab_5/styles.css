@@ -1,0 +1,109 @@
+/* General setup */
+
+html {
+    font-size: 10px;  
+}
+    
+body {
+width: 70%;
+min-width: 800px;
+margin: 0 auto;
+background-color: #F5F5DC;
+}
+    
+/* Typography */
+    
+h1 {
+color: black;
+}
+    
+p, input, li {
+color: black;
+}
+    
+h1 {
+font-size: 4rem;
+text-align: center;
+font-weight: 100;
+}
+    
+    
+p, li {
+font-size: 1.6rem;
+line-height: 1.5;
+}
+    
+/* Header Layout */
+    
+.header {
+margin-bottom: 10px;
+display: flex;
+flex-flow: row wrap;
+}
+    
+body > * {
+background-color:#F5F5DC;
+padding: 1%;
+}
+    
+.header {
+background-color:#F5F5DC;
+padding: 1%;
+}
+    
+h1 {
+flex: 5;
+text-transform: uppercase;
+}
+    
+.flex-outer li,
+.flex-inner {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+    
+/* Labels and Form Elements */
+.flex-outer > li > label,
+.flex-outer li p {
+flex: 1 0 125px;
+max-width: 225px;
+padding: 8px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+flex: 1 0 225px;
+}
+    
+/* Submit Button */
+button {
+    margin-right: 10px;
+}
+
+.flex-outer li button {
+margin-left: 0px;
+margin-right: 10px;
+padding: 6px 12px;
+border: none;
+background: #F0F8FF;
+color: black;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+border-radius: 3px;
+}
+    
+/* Check Boxes */
+.flex-inner li {
+width: 95px;
+}
+
+.flex-inner {
+justify-content: space-between;
+}
+    
+.flex-outer {
+list-style-type: none;
+padding: 0px 16px;
+max-width: 800px; 
+}
