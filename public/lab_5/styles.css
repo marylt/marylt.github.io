@@ -64,6 +64,7 @@ align-items: center;
 }
     
 /* Labels and Form Elements */
+
 .flex-outer > li > label,
 .flex-outer li p {
 flex: 1 0 125px;
