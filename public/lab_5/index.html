@@ -2,13 +2,13 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Mary Ton's Lab 4</title>
+		<title id="tabtitle">Mary Ton's Lab 4</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 
 <body>
 	<div class="header">
-	<h1>Mary Ton's Lab 4</h1>
+	<h1 id="pagetitle">Mary Ton's Lab 4</h1>
 	</div>
 		
 	<form action="/api" method="post">
@@ -69,6 +69,8 @@
 	<script>
 	function testFunction() {
 	 document.body.style.backgroundColor = '#FFF0F5';
+	 document.getElementById("tabtitle").innerHTML = "Mary Ton's Lab 5"
+	 document.getElementById("pagetitle").innerHTML = "Mary Ton's Lab 5"
 	 var x= document.getElementById("master-list")
 	 x.querySelector(".checkbox-list-label").innerHTML = "Fruits";
 	 x.querySelector(".fruit1").innerHTML = "Apple";
