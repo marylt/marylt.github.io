@@ -69,14 +69,14 @@
 	<script>
 	function testFunction() {
 	 document.body.style.backgroundColor = '#FFF0F5';
-	 document.getElementById("tabtitle").innerHTML = "Lab 5 for Mary Ton"
-	 document.getElementById("pagetitle").innerHTML = "Lab 5 for Mary Ton"
-	 var x= document.getElementById("master-list")
+	 document.querySelector("#tabtitle").innerHTML = "Lab 5 for Mary Ton"
+	 document.querySelector("#pagetitle").innerHTML = "Lab 5 for Mary Ton"
+	 var x= document.querySelector("#master-list")
 	 x.querySelector(".checkbox-list-label").innerHTML = "Fruits";
 	 x.querySelector(".fruit1").innerHTML = "Apple";
 	 x.querySelector(".fruit2").innerHTML = "Banana";
 	 x.querySelector(".fruit3").innerHTML = "Orange";
-	 document.getElementById("flex-outer").style.margin = "0 auto"
+	 document.querySelector("#flex-outer").style.margin = "0 auto"
 	 fetch('/api')
      .then((response) => response.text())
      .then((response) => {
