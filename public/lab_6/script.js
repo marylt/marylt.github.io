@@ -1,5 +1,4 @@
 // You may wish to find an effective randomizer function on MDN.
-
 function range(int) {
   const arr = [];
   for (let i = 0; i < int; i += 1) {
@@ -8,6 +7,7 @@ function range(int) {
   return arr;
 }
 
+// sortFunction(b, a) <-- Descending Sort
 function sortFunction(a, b, key) {
   if (a[key] < b[key]) {
     return -1;
